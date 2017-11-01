@@ -267,6 +267,8 @@ std::unique_ptr<FoodVector> exhaustive_max_protein(const FoodVector& foods,
 		}
 		//sum_food_vector(total_calories, total_protein, &candidate);
 		size = candidate.size();
+		std::cout << "\n";
+		std::cout << "Size : << size << "\n";
 		for (int i = 0; i < size; i++) 
 		{
 			total_calories += candidate[i]->kcal();
