@@ -1,6 +1,6 @@
 
 all: maxprotein test
-	./maxprotein_main
+	./experiment
 test: maxprotein_test 
 	./maxprotein_test
 
