@@ -64,7 +64,7 @@ int main() {
 		     soln = greedy_max_protein(trivial_foods, 250);
 		     TEST_TRUE("non-null", soln);
 		     TEST_EQUAL("hotdog and banana", 2, soln->size());
-		   });
+ 		   });
   
   rubric.criterion("greedy_max_protein correctness", 4,
 		   [&]() {
@@ -74,7 +74,7 @@ int main() {
 		     TEST_TRUE("non-null", soln2000);
 		     TEST_TRUE("non-null", soln2500);
 
-		     TEST_FALSE("non-empty", soln2000->empty());
+ 		     TEST_FALSE("non-empty", soln2000->empty());
 		     TEST_FALSE("non-empty", soln2500->empty());
 
 		     int kcal2000, protein2000, kcal2500, protein2500;
@@ -124,8 +124,8 @@ int main() {
 		       std::stringstream ss;
 		       ss << "exhaustive search n=" << n
 			  << ", expected protein=" << expected_protein
-			  << " but algorithm found=" << actual_protein;
-		       TEST_EQUAL(ss.str(), expected_protein, actual_protein);
+			  << " but algorithm found=" << actual_protein; 
+		       TEST_EQUAL(ss.str(), expected_protein, actual_protein); 
 		     }
 		   });
 
