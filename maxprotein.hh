@@ -273,13 +273,12 @@ std::unique_ptr<FoodVector> exhaustive_max_protein(const FoodVector& foods,
 		{
 			total_calories += candidate[i]->kcal();
 			total_protein += candidate[i]->protein_g();
-			std::cout << "food :" << candidate[i]->description() << "\n";
-			std::cout << "protein :" << candidate[i]->protein_g() << "\n";
-			std::cout << "kcal :" << candidate[i]->kcal() << "\n";
+			//std::cout << "food :" << candidate[i]->description() << "\n";
+			//std::cout << "protein :" << candidate[i]->protein_g() << "\n";
+			//std::cout << "kcal :" << candidate[i]->kcal() << "\n";
 		}
-		std::cout << "food :" << candidate << "\n";
-		std::cout << "total :" << total_calories << "\n";
-		std::cout << "max :" << total_kcal << "\n";
+		//std::cout << "total :" << total_calories << "\n";
+		//std::cout << "max :" << total_kcal << "\n";
 		if(total_calories <= total_kcal)
 		{
 			if(total_protein_best == 0 || total_protein > total_protein_best)
@@ -291,6 +290,8 @@ std::unique_ptr<FoodVector> exhaustive_max_protein(const FoodVector& foods,
 			}
 		}
 		candidate.clear();
+		total_protein = 0;
+		total_calories = 0;
 	}
 	return result;
 }
