@@ -12,8 +12,8 @@ int main() {
   int total_kcal = 5000;
 
   // int n = 5;
-  // int n = 10;
-  int n = 15;
+  int n = 10;
+  //int n = 15;
   //int n = 20;
   //int n = 25;
 
