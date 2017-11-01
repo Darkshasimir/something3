@@ -22,11 +22,11 @@ int main() {
 
   Timer timer;
   // make sure to swap exhaustive_max_protein with greedy_max_protein
-  auto result = exhaustive_max_protein(*foods, total_kcal);
+  auto result = greedy_max_protein(*foods, total_kcal);
 
   double elapsed = timer.elapsed();
 
-  cout << "exhaustive_max_protein" << endl;
+  cout << "greedy_max_protein" << endl;
   cout << "n = " << n << endl;
   cout << "elapsed time=" << elapsed << " seconds" << endl;
 
