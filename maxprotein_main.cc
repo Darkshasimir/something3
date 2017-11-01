@@ -13,8 +13,8 @@ int main() {
 
  //int n = 5;
 //int n = 10;
-int n = 15;
-  //int n = 20;
+//int n = 15;
+int n = 20;
   //int n = 25;
 
   auto source = load_usda_abbrev("ABBREV.txt");
